@@ -3,10 +3,10 @@ const sleep = (time) => new Promise((resolve) => setTimeout(resolve, time))
   $('.Patternbtn-div').click();
   console.log('初始化');
   for(i=0; i<$(".hour").length; i++) {
-    if($('.video').eq(0).find(".time_icofinish").length != 1){
+    if($('.video').eq(i).find(".time_icofinish").length != 1){
       $(".hour")[i].click();
+      break;
     }
-    break;
   }
   //temp = Math.abs($('.progress-num').text().slice(0,2));
   time = 300*60;
