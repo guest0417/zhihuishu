@@ -35,7 +35,7 @@
                 return 0;
             }
             $('.el-dialog__wrapper,.dialog-test').css("display", "none");
-            $('.v-modal').css("z-index", "-1");
+            $('.v-modal').css("display", "none");
             //需要加速请删除注释
             /*
             if (!/^X 1.25/.test($('.speedBox').text())) {
